@@ -1,0 +1,15 @@
+PREFIX linkedmdb: <http://data.linkedmdb.org/resource/movie/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dbpedia: <http://dbpedia.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?actor ?movie ?movieTitle ?movieDate ?birthDate ?spouseName
+{
+      ?imdbactor linkedmdb:actor_name ?actor_name.
+      ?actor rdfs:label ?actor_name .
+      ?movie linkedmdb:actor ?imdbactor .
+        ?movie dcterms:title ?movieTitle .
+        ?movie dcterms:date ?movieDate.
+        ?actor dbpedia:spouse ?spouseURI .
+        ?actor dbpedia:birthDate ?birthDate .
+       ?spouseURI rdfs:label ?spouseName .
+} LIMIT 500
