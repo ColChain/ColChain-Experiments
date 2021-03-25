@@ -7,7 +7,7 @@ The repository containse the following directories:
 * figures: Containing the figues created for the experimental evaluation (both the ones in the paper and the ones that were created but did not make it).
 * scripts: Any (bash) scripts used to setup and run the experiments.
 * queries: The queries used in the experimental evaluation.
-* [Download](https://gofile.io/d/63MweG) the fragment HDT files, indexes, as well as the setup files including the update chains on the following link: https://relweb.cs.aau.dk/colchain.
+* [Download](https://relweb.cs.aau.dk/colchain) the fragment HDT files, indexes, as well as the setup files including the update chains on the following link: https://relweb.cs.aau.dk/colchain.
 
 To run the experiments for ColChain, download the setup files in this repository and go to https://github.com/ColChain/ColChain-Java to download the sources for ColChain. Use the scripts in this repository to start the nodes and follow the instructions in that repository to run the experiments.
 
