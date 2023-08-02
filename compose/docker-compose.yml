@@ -1,0 +1,13 @@
+version: "3"
+networks:
+  default:
+    external: true
+    name: colchain-network
+services:
+  colchain:
+    image: caebel/colchain:d1.0
+    network_mode: bridge
+    volumes:
+      - ./:/data
+    ports:
+      - ${COLCHAIN_PORT}:8080
